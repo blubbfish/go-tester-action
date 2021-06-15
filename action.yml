@@ -1,0 +1,11 @@
+name: 'Run node tests'
+description: 'Running Node tests'
+author: 'BlubbFish'
+inputs: 
+  test:
+    description: 'Witch test should be running'
+runs:
+  using: "composite"
+  steps:
+    - run: echo Hello ${{ inputs.who-to-greet }}.
+      shell: bash
